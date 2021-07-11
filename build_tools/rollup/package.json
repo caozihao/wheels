@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "acorn": "^8.4.1",
     "magic-string": "^0.25.7",
     "rollup-plugin-terser": "^7.0.2"
   }
