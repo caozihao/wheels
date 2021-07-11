@@ -2,8 +2,9 @@
  * @Author: caozihao
  * @Date: 2021-07-10 19:50:07
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-10 20:59:35
+ * @LastEditTime: 2021-07-10 21:18:30
  */
+// 代码格式化
 import { terser } from 'rollup-plugin-terser';
 
 export default {
@@ -18,6 +19,7 @@ export default {
 				ascii_only: true, // 仅输出ascii字符
 			},
 			compress: {
+				// 移除console.log方法
 				pure_funcs: ['console.log'],
 			},
 		}),
