@@ -2,7 +2,7 @@
  * @Author: caozihao
  * @Date: 2021-07-11 20:51:01
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 21:40:07
+ * @LastEditTime: 2021-07-11 22:12:23
  */
 describe('AST Scope函数', () => {
 	test('单节点', () => {
@@ -13,7 +13,7 @@ describe('AST Scope函数', () => {
 		 *   const b = 2
 		 * }
 		 */
-		const Scope = require('../../../prototype/acorn/scope');
+		const Scope = require('../scope');
 		const root = new Scope({});
 		root.add('a');
 		const child = new Scope({

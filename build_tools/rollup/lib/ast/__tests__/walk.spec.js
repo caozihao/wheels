@@ -2,7 +2,7 @@
  * @Author: caozihao
  * @Date: 2021-07-11 20:51:01
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 21:08:11
+ * @LastEditTime: 2021-07-11 22:12:34
  */
 
 describe('AST Walk函数', () => {
@@ -13,7 +13,7 @@ describe('AST Walk函数', () => {
 		const mockEnter = jest.fn();
 		const mockLeave = jest.fn();
 		// 实现一个访问者方法
-		const walk = require('../../../prototype/acorn/walk');
+		const walk = require('../walk');
 		//进去和出来都要访问
 		walk(ast, {
 			enter: mockEnter,
@@ -37,7 +37,7 @@ describe('AST Walk函数', () => {
 		const mockEnter = jest.fn();
 		const mockLeave = jest.fn();
 
-		const walk = require('../../../prototype/acorn/walk');
+		const walk = require('../walk');
 		walk(ast, {
 			enter: mockEnter,
 			leave: mockLeave,
