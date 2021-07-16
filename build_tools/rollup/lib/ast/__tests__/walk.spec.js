@@ -2,7 +2,7 @@
  * @Author: caozihao
  * @Date: 2021-07-11 20:51:01
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 22:12:34
+ * @LastEditTime: 2021-07-16 15:02:26
  */
 
 describe('AST Walk函数', () => {
@@ -30,10 +30,14 @@ describe('AST Walk函数', () => {
 	});
 
 	test('数组节点', () => {
-		// 访问3次，第一次:a，第二次:[{}]，第三次:b:2
 		const ast = {
 			a: [{ b: '2' }],
 		};
+		// 访问3次
+		// 第一次:{ a: [{ b: '2' }] }，
+		// 第二次:[{ b: '2' }]
+		// 第三次:{ b: '2' }
+		
 		const mockEnter = jest.fn();
 		const mockLeave = jest.fn();
 

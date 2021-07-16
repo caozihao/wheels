@@ -2,7 +2,7 @@
  * @Author: caozihao
  * @Date: 2021-07-11 20:51:01
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 22:12:03
+ * @LastEditTime: 2021-07-16 15:14:32
  */
 const analyse = require("../analyse");
 describe("AST Analyse方法", () => {

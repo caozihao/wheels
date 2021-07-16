@@ -2,17 +2,17 @@
  * @Author: caozihao
  * @Date: 2021-07-10 19:50:07
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 19:25:56
+ * @LastEditTime: 2021-07-16 14:36:23
  */
 // 代码格式化
 import { terser } from 'rollup-plugin-terser';
 
 export default {
 	input: 'src/case02/index.js',
-	output: {
-		file: './dist/bundle_config.js',
-		format: 'es',
-	},
+	// output: {
+	// 	file: './dist/bundle_config.js',
+	// 	format: 'es',
+	// },
 	plugins: [
 		terser({
 			output: {

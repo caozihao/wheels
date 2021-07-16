@@ -2,7 +2,7 @@
  * @Author: caozihao
  * @Date: 2021-07-11 19:27:23
  * @LastEditors: caozihao
- * @LastEditTime: 2021-07-11 19:56:54
+ * @LastEditTime: 2021-07-16 14:46:30
  */
 const MagicString = require('magic-string');
 const s = new MagicString('export var answer = 55');
@@ -10,9 +10,10 @@ const s = new MagicString('export var answer = 55');
 // 裁剪0-7字符串
 // console.log('s=>', s.snip(0, 7).toString());
 
+
+
 // 缝合
 const bundle = new MagicString.Bundle();
-
 // 连接多个源
 bundle.addSource({
 	filename: 'foo.js',
